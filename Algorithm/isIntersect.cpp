@@ -23,7 +23,6 @@ int isIntersect(point a, point b, point c, point d){
     return ab <= 0 && cd <= 0;
 }
 int main(){
-    freopen("input.txt", "r", stdin);
     ios::sync_with_stdio(false); cin.tie(NULL);
     point a, b, c, d;
     cin >> a.x >> a.y >> b.x >> b.y;

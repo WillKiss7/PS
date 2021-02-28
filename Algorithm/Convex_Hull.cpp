@@ -1,3 +1,5 @@
+//Graham's scan O(nlogn)
+//https://m.blog.naver.com/kks227/220857597424
 #include<bits/stdc++.h>
 using namespace std;
 const int MAX = 100000;

@@ -2,7 +2,7 @@
 using namespace std;
 #define ll long long
 #define MAX 100003
-struct line{
+struct line{ //sx + p (x >= st)
     ll s, p;
     double st;
 };

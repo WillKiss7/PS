@@ -1,7 +1,8 @@
+//acmicpc.net/problem/13263
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
 #define MAX 100003
+typedef long long ll;
 struct line{ //sx + p (x >= st)
     ll s, p;
     double st;
@@ -12,6 +13,7 @@ ll dp[MAX];
 inline double cross(line &a, line &b){
     return (b.p - a.p) / (a.s - b.s);
 }
+
 int main(){
     ios::sync_with_stdio(false); cin.tie(NULL);
     int n; cin >> n;

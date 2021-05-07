@@ -49,6 +49,7 @@ void updatex(int s, int e, int pos){
     updatex((s + e) / 2 + 1, e, pos * 2 + 1);
     updatey(pos, 1, n, 1);
 }
+
 int main(){
     ios::sync_with_stdio(false); cin.tie(NULL);
     int m; cin >> n >> m;
@@ -69,5 +70,6 @@ int main(){
             cout << outputx(1, n, 1) << "\n";
         }
     }
+    
     return 0;
 }

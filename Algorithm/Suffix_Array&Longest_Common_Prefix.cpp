@@ -8,7 +8,7 @@ bool cmp(int x, int y){
     if(g[x] == g[y]) return g[x + t] < g[y + t];
     return g[x] < g[y];
 }
-void getSA(){
+void getSA(){ //Manber-Myers Algorithm
     t = 1;
     for(int i = 0; i < n; i++){
         SA[i] = i;

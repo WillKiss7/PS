@@ -18,7 +18,7 @@ int main(){
     for(int i = 2; i <= n; i++)
         val[i] = INF;
     for(int i = 0; i < n; i++){
-        int min = (1 << 31) - 1, num;
+        int min = INF, num;
         for(int j = 1; j <= n; j++)
             if(!visit[j] && val[j] < min){
                 min = val[j];

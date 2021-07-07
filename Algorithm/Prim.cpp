@@ -4,7 +4,7 @@ using namespace std;
 const int INF = (1 << 31) - 1;
 int val[1003], ans = 0;
 vector<pair<int, int>> link[1003];
-bool visit[1003];
+bool isVisited[1003];
 
 int main(){
     ios::sync_with_stdio(false); cin.tie(NULL);
@@ -20,12 +20,12 @@ int main(){
     for(int i = 0; i < n; i++){
         int min = INF, num;
         for(int j = 1; j <= n; j++)
-            if(!visit[j] && val[j] < min){
+            if(!isVisited[j] && val[j] < min){
                 min = val[j];
                 num = j;
             }
         ans += val[num];
-        visit[num] = true;
+        isVisited[num] = true;
         for(auto next : link[num]){
             int dist = next.first;
             int next_node = next.second;

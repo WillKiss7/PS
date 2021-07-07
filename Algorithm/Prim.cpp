@@ -8,7 +8,7 @@ bool visit[1003];
 
 int main(){
     ios::sync_with_stdio(false); cin.tie(NULL);
-    int n, m, ans = 0; cin >> n >> m;
+    int n, m; cin >> n >> m;
     while(m--){
         int a, b, dist;
         cin >> a >> b >> dist;

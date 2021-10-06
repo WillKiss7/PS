@@ -1,10 +1,10 @@
-int parent[10003];
+int p[10003];
 int find(int x){
-    if(x == parent[x]) return x;
-    return parent[x] = find(parent[x]);
+    if(x == p[x]) return x;
+    return p[x] = find(p[x]);
 }
 void uf(int a, int b){
     a = find(a); b = find(b);
     if(a > b) swap(a, b);
-    parent[b] = a;
+    p[b] = a;
 }

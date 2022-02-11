@@ -1,4 +1,5 @@
 int p[10003];
+//only path compression
 int find(int x){
     if(x == p[x]) return x;
     return p[x] = find(p[x]);
